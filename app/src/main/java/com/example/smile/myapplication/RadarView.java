@@ -162,4 +162,34 @@ public class RadarView extends View {
         centerY = h / 2;
         postInvalidate();
     }
+
+    //设置标题
+    public void setTitles(String[] titles) {
+        this.titles = titles;
+    }
+
+    //设置数值
+    public void setData(double[] data) {
+        this.data = data;
+    }
+
+    //设置最大数值
+    public void setMaxValue(float maxValue) {
+        this.maxValue = maxValue;
+    }
+
+    //设置蜘蛛网颜色
+    public void setMainPaintColor(int color){
+        mainPaint.setColor(color);
+    }
+
+    //设置标题颜色
+    public void setTextPaintColor(int color){
+        textPaint.setColor(color);
+    }
+
+    //设置覆盖局域颜色
+    public void setValuePaintColor(int color){
+        valuePaint.setColor(color);
+    }
 }
